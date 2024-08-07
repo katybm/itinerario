@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.semester-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.semester {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+header {
+    background-color: #f3b1b1;
+    padding: 20px;
+    text-align: center; /* Centra el texto dentro del header */
+}
+h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.semester h2 {
+    font-size: 1.5em;
+}
+
+.course {
+    display: block;
+    margin-top: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    user-select: none;
+}
+
+.course input {
+    display: none; /* Ocultar el checkbox original */
+}
+
+.course span {
+    display: block;
+    font-size: 1em;
+}
+
+.course.not-available {
+    background-color: #e0e0e0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.course.available {
+    background-color: #f6cce3;
+    color: #333;
+}
+
+.course.completed {
+    background-color: #60d660;
+    color: #333;
+}
+
+.course:hover {
+    background-color: #cb8585;
+}
+
